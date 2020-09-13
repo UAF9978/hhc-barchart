@@ -1,11 +1,28 @@
-*.iml
+﻿#git config --global core.excludesfile '~/.gitignore' （设置忽略文件配置）
+#git branch --set-upstream master origin/master（设置本地分支与远程分支对应关联）
+#git config --global credential.helper store(长期存储密码)
+#git config --global credential.helper cache(设置记住密码默认15分钟)
+#git config credential.helper 'cache --timeout=7200'(设置2个小时之后失效)
+
 .gradle
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries
-/.idea
-/gradle
+.idea
+.externalNativeBuild
+local.properties
 .DS_Store
+gradlew
+gradlew.bat
+
 /build
 /captures
-.externalNativeBuild
+/gradle
+/bin
+/gen
+/out
+
+*.iml
+*.apk
+*.ap_
+*.dex
+*.class
+
+
